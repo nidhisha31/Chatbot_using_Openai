@@ -1,0 +1,25 @@
+Doc Purpose 
+This doc consolidates the knowledge and background information needed to build a search engine. A search engine is a software system that collects information from the World Wide Web and presents it to users who are looking for specific information. This will initially be an internal doc to throw ideas in a single place & we develop a Search engine.
+
+Search Engine Background (Software functionality current status)
+Currently the Agronomy team creates metadata (No such column to store search keyword; right now if word not matching with the metadata it through result “No Match Found”). Normal search is working fine like if we search with correct spelling then it works, but for wrong spelling it shows nothing. 
+
+The main issues observe (Customer pain point)  in search engine are:-
+
+Relevance:- Relevance is a fundamental concept in information retrieval. One obvious reason for this is that language can be used to express the same concepts in many different ways, often with very different words. This is referred to as the vocabulary mismatch problem in information retrieval.
+Evaluation:- Evaluation of search engines is a very active area, with much of the current focus on using large volumes of log data from user interactions, such as clickthrough data, which records the documents that were clicked on during a search session. Clickthrough and other log data is strongly correlated with relevance so it can be used to evaluate search, but search engine companies still use relevance judgments in addition to log data to ensure the validity of their results.
+Information Needs:- This should be clear given that the evaluation of search is user-centered. That is, the users of a search engine are the ultimate judges of quality. . An information need is the underlying cause of the query that a person submits to a search engine.
+
+
+
+
+
+
+The “big issues” in the design of search engines include the ones identified for information retrieval: effective ranking algorithms, evaluation, and user interaction. There are, however, a number of additional critical features of search engines that result from their deployment in large-scale, operational environments. Foremost among these features is the performance of the search engine in terms of measures such as response time, query throughput, and indexing speed. Response time is the delay between submitting a query and receiving the result list, throughput measures the number of queries that can be processed in a given time, and indexing speed is the rate at which text documents can be transformed into indexes for searching. An index is a data structure that improves the speed of search.
+                         Another important performance measure is how fast new data can be incorporated into the indexes. Search applications typically deal with dynamic, constantly changing information. Coverage measures how much of the existing information in, say, a corporate information environment has been indexed and stored in the search engine, and recency or freshness measures the “age” of the stored information.
+
+Architecture
+
+An architecture is designed to ensure that a system will satisfy the application requirements or goals. The two primary goals of a search engine are:
+Effectiveness (quality): We want to be able to retrieve the most relevant set of documents   possible for a query.
+Efficiency (speed): We want to process queries from users as quickly as possible.
